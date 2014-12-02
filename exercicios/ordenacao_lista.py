@@ -8,7 +8,7 @@
 #														#
 #########################################################
 
-__author__ = 'david vilaca'
+__author__ = 'davidvilaca'
 
 '''
 FUNCAO DE ORDENACAO ENTRA COM VETOR (LISTA)
