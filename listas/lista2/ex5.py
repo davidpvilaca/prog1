@@ -49,7 +49,7 @@ def main():
 	string = input('Digite uma mensagem para a verificacao: ')
 	
 	#verificacao
-	string = string.lower()
+	string = string.lower() #deixa toda string minuscula
 	vogais, consoantes = f_verifica(string)
 	
 	#saida de dados
