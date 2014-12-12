@@ -31,11 +31,15 @@ def f_pontoeprint (c,e):
 	print ('Pontuacao total: %d' %(c))
 #--fim f_pontoeprint--
 
-def f_frequencia (notasT,qtdQ):
+def f_frequencia (notasT,nota):
 	#variaveis locais
-	i = 0; j = 0;
+	i = 0; cont = 0
 	#processamento
-	
+	for i in notasT:
+		if i == nota:
+			cont += 1
+
+	return (cont)
 	
 #--fim f_frequencia--
 
@@ -46,7 +50,7 @@ def main():
 	#ENTRADA DE DADOS
 	
 	print('CONTROLE DE PROVAS\n\n')
-	qtdQ = 5
+	qtdQ = 10
 	print('Preencha o gabarito logo abaixo\n')
 	
 	#entrada do gabarito#
@@ -77,13 +81,18 @@ def main():
 		mat = input('\nMatricula ou "fim" para encerrar: ')
 	#--fim while--
 	#--fim entrada da matricula e respostas--#
-	
+
 	#frequencia de cada nota#
-	f_frequencia(gravapontos,qtdQ)
-	#--fim frequencia de cada nota--
+	i = 0
+	print('\nA FREQUENCIA DAS NOTAS\n\n')
+
+	for i in range(qtdQ+1):
+		print('Nota: %d -- %d Alunos'%(i,f_frequencia(gravapontos,i)))
+	# --fim for
+
+	# --fim frequencia de cada nota--
 	
 	return 0
 
 if __name__ == '__main__':
 	main()
-
