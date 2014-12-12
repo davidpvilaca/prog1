@@ -3,6 +3,10 @@
 
 __author__ = 'David'
 
+'''
+F_CORRECAO ENTRA COM GAB E RESP (LISTAS)
+RETORNA ACERTOS (INTEIRO)
+'''
 def f_correcao(gab,resp):
 	#variaveis locais
 	i = 0; tam = 0; acertos = 0; erros = 0;
@@ -19,7 +23,10 @@ def f_correcao(gab,resp):
 	
 	return (acertos)
 #--fim f_correcao--
-
+'''
+F_PONTOEPRINT ENTRA COM C E E (INTEIROS)
+NAO RETORNA NADA APENAS IMPRIME A PONTUACAO
+'''
 def f_pontoeprint (c,e):
 	#variaveis locais
 	pc = 0.0; pe = 0.0;
@@ -31,6 +38,10 @@ def f_pontoeprint (c,e):
 	print ('Pontuacao total: %d' %(c))
 #--fim f_pontoeprint--
 
+'''
+F_FREQUENCIA ENTRA COM NOTAST (LISTA) E NOTAS (INTEIRO)
+RETORNA CONT (INTEIRO)
+'''
 def f_frequencia (notasT,nota):
 	#variaveis locais
 	i = 0; cont = 0
