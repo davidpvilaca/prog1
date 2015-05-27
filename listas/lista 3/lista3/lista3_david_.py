@@ -162,6 +162,8 @@ def main():
             ator = input("Digite o nome de um ator: ")
             f_atorContracena(ator,d)
         
+        print("TESTE DAS FUNCOES\n\nCOMANDOS:\n1 - Testar exercicios 1 e 2\n2 - Testar exercicio 3\n 3 - Testar exercicio 4")
+        print("Para sair do teste digite um numero maior que 3 ou menor que 1\n")
         testar = int(input("Insira uma opcao de teste: "))
         
     return 0
